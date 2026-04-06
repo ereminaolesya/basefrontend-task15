@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background: #F8FAFC;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    max-width: 360px;
+    border-radius: 16px;
+    padding-top: 29.8px;
+    padding-right: 20.2px;
+    padding-bottom: 25px;
+    padding-left: 20.2px;
+    gap: 19.18px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0px 1px 3px 0px #0000000D, 0px 4px 20px 0px #00000014;
+}
+
+.calendar-header {
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-top: 9.6px;
+    padding-right: 12.82px;
+    padding-bottom: 9.6px;
+    padding-left: 12.79px;
+    background: #F1F5F9;
+    box-shadow: 0px 1px 3px 0px #0000000D;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.button-month {
+    width: 44.63999938964844px;
+    height: 42px;
+    border-radius: 8px;
+    padding-top: 10.03px;
+    padding-right: 13.32px;
+    padding-bottom: 10.03px;
+    padding-left: 13.32px;
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+.calendar-select-month {
+    width: 165.60000610351562px;
+    height: 24.33333969116211px;
+    display: flex;
+    flex-direction: row;
+}
+
+[data-test-id="select-year"] {
+    width: 53.67px;
+    height: 24.33333969116211px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+[data-test-id="month-label"] {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16.8px;
+    line-height: 100%;
+    letter-spacing: 0.08px;
+    vertical-align: middle;
+    color: #1E293B;
+    display: flex;
+    align-self: center;
+    position: relative;
+    left: 19.2px;
+}
+
+.calendar-body {
+    width: 319.6000061035156px;
+    gap: 14.01px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calendar-month {
+    width: 319.6px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 13.6px;
+    line-height: 100%;
+    letter-spacing: 0.27px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: #64748B;
+}
+
+[data-test-id="container-calendar-days"] {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.day {
+    height: 42.22999954223633px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15.2px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #1E293B;
+
+}
+.day.other-month {
+    color: #64748B;
+}
+.day.today {
+    background: #3B82F6;
+    box-shadow: 0px 2px 8px 0px #3B82F64D;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+}

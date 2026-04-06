@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calendar">
+    <div class="calendar-header">
+        <button class="button-month" data-test-id="btn-prev-month" >◀</button>
+        <div class="calendar-select-month">
+                <select data-test-id="select-year" id="select-year" aria-expanded="false"></select>
+            <label data-test-id="month-label" for="select-year"></label>
+        </div>
+        <button class="button-month" data-test-id="btn-next-month" >▶</button>
+    </div>
+    <div class="calendar-body">
+        <ul class="calendar-month">
+            <li>SUN</li>
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WED</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+        </ul>
+        <div data-test-id="container-calendar-days"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
